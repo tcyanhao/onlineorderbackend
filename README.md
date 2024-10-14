@@ -1,11 +1,22 @@
-Online Food Ordering System
-Overview This is a Spring Boot-based online food ordering System designed to provide users with an intuitive and user-friendly experience for browsing restaurant menus, placing orders, managing carts, and tracking order statuses. The platform consists of a RESTful API backend and a modern, responsive frontend built with ReactJS.
+This repository contains the backend code for an Online Food Order System, built using Spring Boot and Gradle. The system allows customers to browse restaurants, place orders, and make payments. It also provides administrative functionality for managing restaurant menus and orders.
 
-Features Menu Browsing: 
-Users can browse through available menu items. Cart Management: Add and remove items from the cart and view current orders. Order Placement: Submit orders and view order history. User Registration: Sign up, login, and manage user accounts. Payment Processing: Integration with payment APIs for processing orders.
+Project Structure
+The project is organized as follows:
+src/main/java/: Contains the core Java source files, organized by packages (controllers, services, models, repositories).
+src/main/resources/: Configuration files, including application.yml for environment setup and resource management.
+build.gradle: The Gradle build file that manages project dependencies and tasks.
+gradle/: Gradle wrapper files for build automation.
 
-Tech Stack Backend: Spring Boot
-CRUD REST APIs for managing menus, orders, and user accounts. Spring Data JDBC to interact with PostgreSQL, hosted on AWS RDS. Spring Security for session-based authentication and securing user data. Database: PostgreSQL
+Features
+User Registration and Authentication: Handles user signup, login, and session management.
+Restaurant Management: Admins can create and manage restaurants and menus.
+Order Management: Customers can place, modify, and track their orders.
+Payment Integration: Secure payment processing using external payment services.
+Order Notifications: Provides real-time order updates and history.
 
-Frontend: ReactJS
-Built using Ant Design for a responsive and user-friendly interface. Provides real-time updates for cart and order statuses.
+Local Development
+Clone the repository:
+git clone https://github.com/tcyanhao/socialaibackend.git
+
+Set up the database:
+Install and configure PostgreSQL or any other relational database.
